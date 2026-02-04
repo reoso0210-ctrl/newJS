@@ -1,65 +1,385 @@
 @charset "utf-8";
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-size: .9rem;
   background-color: #f0f0f0;
 }
 
-h1{
-  font-size:3rem;
+h1 {
+  font-size: 3rem;
   font-weight: 350;
   width: 140px;
   text-align: center;
+  letter-spacing: 12px;
 }
-a{
+
+
+a {
   text-decoration: none;
   color: #000;
 }
 
-li{
+li {
   list-style: none;
 }
 
-/* ヘッダー部分 */
-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 90px;
+img {
+  max-width: 100%;
+  vertical-align: bottom;
 }
 
-.wrapper{
+.container {
+  max-width: 1032px;
+  padding: 0 16px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h2 {
+  font-size: 2.3rem;
+  letter-spacing: 1rem;
+  font-weight: 420;
+}
+
+.ruby {
+  position: relative;
+  display: block;
+  margin: 0 0 100px 0;
+}
+
+.ruby::after {
+  content: "";
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  width: 48px;
+  height: 1px;
+  background-color: #000;
+}
+
+.wrapper2 {
+  margin-left: 20px;
+}
+
+/* ヘッダー部分 */
+header {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.wrapper {
+  display: flex;
+  gap: 30px;
   margin-right: 30%;
 }
 
-
-header p{
+.contact {
   background-color: #000;
   color: white;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  width: 200px;
+  height: 80px;
+  font-size: 12px;
 }
 
-@media(max-width:900px){
-  header p{
-    display: none;
-  }
-}
-
-.main-fv{
+/* メイン部分 */
+.main-fv {
   width: 100%;
   height: 900px;
   overflow: hidden;
+  margin-bottom: 120px;
 }
-main img{
+
+.main-fv img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
+}
+
+/* Article部分 */
+article {
+  max-width: 1032px;
+  margin: 0 auto 120px auto;
+}
+
+article ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-date {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.news-date span {
+  display: block;
+  width: 60px;
+  height: 24px;
+  background: #000;
+  color: white;
+  text-align: center;
+  margin-left: 24px;
+}
+
+.news-info {
+  width: calc(100% / 3);
+  border-right: solid 1px #000;
+  padding: 10px 20px;
+}
+
+.news-info:last-child {
+  border-right: none;
+}
+
+/* ABOUT部分 */
+
+.about {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto;
+  gap: 48px;
+  margin-bottom: 120px;
+
+  img {
+    width: 50%;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+.about-ex {
+  margin-top: 200px;
+
+  p {
+    line-height: 2rem;
+  }
+}
+
+/* BUSINESS部分 */
+
+.business {
+
+  margin-bottom: 120px;
+
+  h2 {
+    margin-left: 20px;
+  }
+
+  span.ruby {
+    margin-left: 20px;
+  }
+}
+
+.grid-wrapper {
+  max-width: 720px;
+  margin: 200px auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+
+
+.plan:nth-child(2n) {
+  transform: translateY(-100px);
+}
+
+.plan h3 {
+  position: relative;
+  padding-left: 12px;
+  font-weight: 550;
+}
+
+.plan h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 8px;
+  height: .2px;
+  background: #000;
+  transform: translateY(-50%);
+}
+
+/* company部分 */
+
+.company {
+  display: flex;
+  height: 750px;
+  align-items: center;
+  position: relative;
+
+  .img{
+    width: 51%;
+    position: absolute;
+    top: 120px;
+    right: 0;
+
+    img{
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    };
+  }
+}
+
+.company-table {
+  position: absolute;
+  background: white;
+  padding: 100px 8% 100px 6%;
+  width: 57%;
+  top: 0;
+  left: 0;
+
+  .wrapper2{
+    margin-left: 0;
+    .ruby{
+      margin-left: 0;
+    }
+  }
+}
+
+.line{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  dt{
+    width: 20%;
+    margin: 0 0 10px 0;
+  }
+  dd{
+    width: 80%;
+    margin: 0 0 10px 0;
+  }
+  .another{
+    margin-left: 20%;
+  }
+}
+
+footer{
+  background: white;
+  padding: 40px 0;
+}
+
+.f-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.f-adress{
+  display: flex;
+
+}
+
+small{
+  font-size: 0.6rem;
+}
+
+/* 900px以下 */
+@media(max-width:900px) {
+  main,
+  article,
+  section{
+    margin-bottom: 60px;
+  }
+  .contact {
+    display: none;
+  }
+
+  .header-left {
+    flex-direction: column;
+    gap: 1px;
+    align-items: flex-start;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+
+  .wrapper {
+    padding-left: 20px;
+  }
+
+  article ul {
+    flex-direction: column;
+    border-right: none;
+  }
+
+  .news-info {
+    width: 100%;
+    border-right: none;
+    margin-bottom: 24px;
+  }
+
+  .news-date {
+    margin-bottom: 12px;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .about-ex {
+    margin-top: 0;
+  }
+
+  .grid-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    padding: 0 5px;
+  }
+
+  .plan:nth-child(2n) {
+    transform: translateY(0);
+  }
+
+  .ruby {
+    margin-bottom: 60px;
+  }
+
+  .company{
+    height: auto;
+    flex-direction: column;
+    position: static;
+  }
+  .company-table,
+  .company .img {
+    position: static;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .company .img img {
+    height: auto;
+  }
+
+  .f-wrapper{
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
 }

@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Web Entertainment Design</title>
+  <link rel="icon" href="img/favicon.ico">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <div>
+    <div class="header-left container">
       <h1><a href="#">WED</a></h1>
       <ul class="wrapper">
         <li><a href="#">NEWS</a></li>
@@ -19,17 +20,118 @@
         <li><a href="#">COMPANY</a></li>
       </ul>
     </div>
-    <a href="#">お問い合わせ</a>
+    <a class="contact" href="#">お問い合わせ</a>
   </header>
 
   <main>
-    <div class="main-fv"><img src="img/mainvisual.jpg" alt="会社の風景"></div></main>
+    <div class="main-fv">
+      <img src="img/mainvisual.jpg" alt="会社の風景">
+    </div>
+  </main>
 
-  <article></article>
-  <section></section>
-  <section></section>
-  <section></section>
-  <footer></footer>
+  <article>
+    <div class="wrapper2">
+      <h2>NEWS</h2>
+      <span class="ruby">ニュース</span>
+    </div>
+    <ul>
+      <li class="news-info">
+        <div class="news-date"><time datetime="2021.01.01">2021.01.01</time><span>NEWS</span>
+        </div>
+        <p>タイトルタイトルタイトルタイトル</p>
+      </li>
+      <li class="news-info">
+        <div class="news-date"><time datetime="2021.01.01">2021.01.01</time><span>PRESS</span>
+        </div>
+        <p>タイトルタイトルタイトルタイトル</p>
+      </li>
+      <li class="news-info">
+        <div class="news-date"><time datetime="2021.01.01">2021.01.01</time><span>NEWS</span>
+        </div>
+        <p>タイトルタイトルタイトルタイトル</p>
+      </li>
+    </ul>
+  </article>
+  <section class="about">
+    <img src="img/about.jpg" alt="私たちについて">
+    <div class="about-ex">
+      <h2>ABOUT</h2>
+      <span class="ruby">私たちについて</span>
+      <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+    </div>
+  </section>
+  <section class="business container">
+    <h2>BUSINESS</h2>
+    <span class="ruby">事業内容</span>
+    <div class="grid-wrapper">
+      <div class="plan">
+        <h3>Web制作・マーケティング</h3><img src="img/business1.jpg" alt="Web制作・マーケティング">
+      </div>
+      <div class="plan">
+        <h3>プロモーション企画・制作</h3><img src="img/business3.jpg" alt="プロモーション企画・制作">
+      </div>
+      <div class="plan">
+        <h3>インターネットメディア事業</h3><img src="img/business2.jpg" alt="インターネットメディア事業">
+      </div>
+
+      <div class="plan">
+        <h3>ソーシャル企画・運営</h3><img src="img/business4.jpg" alt="ソーシャル企画・運営">
+      </div>
+    </div>
+
+
+  </section>
+  <section class="company container">
+    <div class="company-table">
+      <div class="wrapper2">
+        <h2>COMPANY</h2>
+        <span class="ruby">会社情報</span>
+      </div>
+      <dl class="line">
+
+      <dt>会社名</dt>
+      <dd>ウェブエンターテイメントデザイン株式会社</dd>
+
+
+      <dt>所在地</dt>
+      <dd>〒123-4567 東京都渋谷区桜丘町99-9 West Building 3F</dd>
+
+      <dt>代表者</dt>
+      <dd>XXXXXXX</dd>
+
+      <dt>設立</dt>
+      <dd>2021年1月1日</dd>
+
+      <dt>資本金</dt>
+      <dd>3,000,000円</dd>
+
+      <dt>事業内容</dt>
+      <dd>Web制作・マーケティング</dd>
+      <dd class="another">プロモーション企画・制作</dd>
+      <dd class="another">インターネットメディア事業</dd>
+      <dd class="another">ソーシャル企画・運営</dd>
+
+      </dl>
+    </div>
+    <div class="img"><img src="img/company.jpg" alt="会社概要"></div>
+    
+  </section>
+  <footer>
+    <div class="container">
+    <div class="f-wrapper">
+    <h2>WED</h2>
+    <div class="f-address">
+    <p>Web Entertainment Design Inc.</p>
+    <p>West Building 3F</p>
+    <p>9-99 Sakuragaokacho Shibuya-ku </p>
+    <p>Tokyo, japan 150-0031</p>
+    <p>T/99-9999-9999</p></div></div>
+
+    <small>© 2021 Web Entertainment Design Inc.</small>
+</div>
+  </footer>
 </body>
 
 </html>
