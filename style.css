@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 350;
   width: 140px;
   text-align: center;
@@ -102,7 +102,7 @@ header {
 /* メイン部分 */
 .main-fv {
   width: 100%;
-  height: 900px;
+  height: 100vh;
   overflow: hidden;
   margin-bottom: 120px;
 }
@@ -153,23 +153,23 @@ article ul {
 
 .about {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   margin: 0 auto;
   gap: 48px;
   margin-bottom: 120px;
 
   img {
-    width: 50%;
+    width: 55%;
     height: 400px;
     object-fit: cover;
   }
 }
 
 .about-ex {
-  margin-top: 200px;
+
 
   p {
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -189,7 +189,7 @@ article ul {
 }
 
 .grid-wrapper {
-  max-width: 720px;
+  max-width: 800px;
   margin: 200px auto 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
